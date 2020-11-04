@@ -1,0 +1,19 @@
+version: "3"
+services:
+  reverseproxy:
+    build:
+      context: .
+    image: ciper97/reverseproxy
+  backend-user:
+    build:
+      context: ../udagram-user-api
+    image: cipher97/udagram-user-api
+  backend-feed:
+    build: 
+        context: ../udagram-feed-api
+    image: cipher97/udagram-feed-api
+  frontend:
+    build: 
+        context: ../udagram-frontend
+    image: cipher97/udagram-frontend:local
+
