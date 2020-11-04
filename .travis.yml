@@ -15,7 +15,7 @@ before-install:
   - chmod +x ./kubectl
   - sudo mv ./kubectl /usr/local/bin/kubectl
 
-install: docker-compose -f deployment/docker-compose-build.yaml build --parallel
+install: docker-compose -f deployment/docker-compose-build.yml build --parallel
 
 after_script:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
