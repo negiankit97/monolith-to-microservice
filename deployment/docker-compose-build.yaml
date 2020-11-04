@@ -15,5 +15,5 @@ services:
   frontend:
     build: 
         context: ../udagram-frontend
-    image: cipher97/udagram-frontend:local
+    image: cipher97/udagram-frontend
 
