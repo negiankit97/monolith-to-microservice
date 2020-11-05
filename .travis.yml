@@ -19,7 +19,7 @@ install: docker-compose -f deployment/docker-compose-build.yml build --parallel
 
 after_script:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker push cipher97/reverseproxy:latest
-  - docker push cipher97/udagram-feed-api:latest
-  - docker push cipher97/udagram-user-api:latest
-  - docker push cipher97/udagram-frontend:latest
+  - docker push "$DOCKER_USERNAME"/reverseproxy:latest
+  - docker push "$DOCKER_USERNAME"/udagram-feed-api:latest
+  - docker push "$DOCKER_USERNAME"/udagram-user-api:latest
+  - docker push "$DOCKER_USERNAME"/udagram-frontend:latest
