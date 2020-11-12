@@ -36,5 +36,6 @@ services:
       URL: "http://localhost:8100"
   frontend:
     image: cipher97/udagram-frontend
+    dockerfile: Dockerfile
     ports:
       - "8100:80"

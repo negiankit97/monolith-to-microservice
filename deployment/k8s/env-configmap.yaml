@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  POSTGRES_USERNAME: ankit
+  POSTGRES_PASSWORD: ankitskyhigh
+  POSTGRES_HOST: newrds.ci6t8iqljyjf.ap-south-1.rds.amazonaws.com
+  POSTGRES_DB: newrds
+  AWS_BUCKET: project-749441327965-dev
+  AWS_REGION: ap-south-1
+  AWS_PROFILE: default
+  JWT_SECRET: hello
+  URL: http://localhost:8100
+metadata:
+  name: env-config
